@@ -1,23 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
-.container {
-    text-align: center;
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f6f5f4;
+    height: 824px;
+    border-width: 1px;
+    border-color: #ecebea;
+    border-style: solid;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    font-family: "Roboto", sans-serif;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.headerTop {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 40px;
+    width: 90%;
+    left: calc(49.93055555555558% - 90.20833333333333% / 2);
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+.leftItems {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+}
+
+.email_copyBtn {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    background-color: #f1f0ef;
+    border-color: rgb(236, 235, 234);
+    border-radius: 60px;
+    opacity: 1;
+    padding-left: 16px;
+    padding-right: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.myEmail {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+.myEmail-address {
+    font-size: 12px;
+    font-weight: 400;
+    color: #242424;
+}
+
+.copy-button {
+    background-color: #ffffff;
+    height: 52px;
+    width: 104px;
+    border-radius: 60px;
+    border-width: 0px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #242424;
+    font-family: "Roboto", sans-serif;
+}
+
+.CV-linkBackground {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 56px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    background-color: #f1f0ef;
+    border-color: rgb(236, 235, 234);
+    border-radius: 60px;
+    opacity: 1;
+    width: 108px;
+}
+
+.CV-linkContainer {
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    height: 52px;
+    width: 104px;
+    border-radius: 60px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.CV-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #242424;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.CV-linkContainer:hover {
+    text-decoration: underline;
+}
+
+.rightItems {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    gap: 10px;
+}
+
+.githubLink, .telegramLink, .instagramLink {
+    text-decoration: none;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
+}
+
+.messageMeContainer {
+    align-content: center;
+    flex: none;
+    position: relative;
+    height: 60px;
+    width: 180px;
+}
+
+.messageMeLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.messageMeLink:hover {
+    text-decoration: underline;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: relative;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%; /* Початок з правого краю */
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Початкова позиція */
+    }
+    100% {
+        transform: translateX(-100%); /* Кінцева позиція */
+    }
 }
