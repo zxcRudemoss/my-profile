@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>altufiev</title>
-    <!-- <link rel="stylesheet" href="/styles.css"> -->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="headerTop">
             <div class="leftItems">
-                <div class="myEmail">
-                    <p class="myEmail-address" id="myEmail-address">altufievmain@gmail.com</p>
+                <div class="email_copyBtn">
+                    <div class="myEmail">
+                        <p class="myEmail-address" id="myEmail-address">altufievmain@gmail.com</p>
+                        
+                        <button class="copy-button" id="copy-button">Copy</button>
+                    </div>
                 </div>
-                <button id="copy-button">Copy</button>
 
-                <div class="CV-link">
-                    <a href="#">CV</a>
+                <div class="CV-linkBackground">
+                    <div class="CV-linkContainer">
+                        <a class="CV-link" href="#">CV</a>
+                    </div>
                 </div>
             </div>
 
             <div class="rightItems">
-                <a href="#">GitHub</a>
-                <a href="#">Telegram</a>
-                <a href="#">Instagram</a>
+                <a class="githubLink" href="#">GitHub</a>
+                <p class="firstSeparator">/</p>
+                <a class="telegramLink" href="https://t.me/Altufiev">Telegram</a>
+                <p class="secondSeparator">/</p>
+                <a class="instagramLink" href="#">Instagram</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="heroText">
+                <h1>My first project <br> with great name <br> "Hello World!"</h1>
             </div>
 
-        </div>
+            <div class="messageMeContainer">
+                <a class="messageMeLink" href="#">Message me</a>
+            </div>
+        <div>
+
     </header>
+
+        <div class="marquee">
+            <p>Це приклад бігучої стрічки!</p>
+        </div>
 
     <script src="/copy-mail-btn.js"></script>
 
