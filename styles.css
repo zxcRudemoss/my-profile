@@ -3,32 +3,19 @@
 }
 
 body {
+    height: 2000px;
     margin: 0;
     background-color: #f6f5f4;
-}
-
-header {
-    z-index: 2;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #f6f5f4;
-    height: 742px;
-    border-width: 1px;
-    border-color: #ecebea;
-    border-style: solid;
-    border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 120px;
     font-family: "Roboto", sans-serif;
 }
 
-.headerTop {
-    z-index: 2;
+header {
     justify-content: space-between;
     align-items: center;
     display: flex;
     position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
     top: 40px;
     width: 90%;
     left: calc(49.93055555555558% - 90.20833333333333% / 2);
@@ -145,11 +132,68 @@ header {
     font-weight: 400;
 }
 
-.main {
+.marqueeContainer {
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #ecebea;
+    border-style: solid;
+    border-radius: 120px;
+    height: 742px;
+    position: absolute;
+    left: 0%;
+    top: 280px;
+    width: 100%;
+}
+
+.marquee {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: relative;
+    top: 520px;
+    padding-left: 0%;
+    width: 200%;
+}
+
+.marquee ul {
+    display: flex;
+    animation: marquee 25s linear infinite;
+    list-style-type: none;
+    gap: 200px;
+    padding-left: 0%;
+    padding-right: 200px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.marquee-content {
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.titleAndBtnContainer {
     align-content: center;
     align-items: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    top: 60px;
+    position: relative;
 }
 
 h1 {
@@ -188,57 +232,81 @@ h1 {
     text-decoration: underline;
 }
 
-.marqueeContainer {
-    z-index: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    background-color: #ffffff;
+.firstScreen {
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f6f5f4;
+    height: 742px;
+    width: 100%;
     border-width: 1px;
     border-color: #ecebea;
     border-style: solid;
-    border-radius: 120px;
-    height: 742px;
-    position: absolute;
-    left: 0%;
-    top: 280px;
-    width: 100%;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
 }
 
-.marquee {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 10px;
+.aboutMe {
+    display: flex;
     position: relative;
-    top: 520px;
-    padding-left: 0%;
-    width: 200%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 400px;
 }
 
-.marquee ul {
-    display: flex; /* Початок з правого краю */
-    animation: marquee 25s linear infinite;
-    list-style-type: none;
-    gap: 200px;
-    padding-left: 0%;
-    padding-right: 200px;
-    justify-content: space-around;
-    width: 100%;
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
 }
 
-.marquee-content {
-    display: inline-block;
+.roadMapLine {
+    background-color: #ecebea;
+    height: 1px;
+    top: 160px;
+    width: 972px;
+    position: absolute;
 }
 
-@keyframes marquee {
-    0% {
-        transform: translateX(0%); /* Початкова позиція */
-    }
-    100% {
-        transform: translateX(-100%); /* Кінцева позиція */
-    }
+.checkpointsConteiner {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 240px;
+    width: 80%;
+    gap: 80px;
 }
 
+.card {
+    display: flex;
+    flex: none;
+    align-items: flex-start;
+    column-gap: 20px;
+    flex-direction: column;
+    width: 183px;
+    flex-wrap: nowrap;
+}
+
+.checkpointTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
