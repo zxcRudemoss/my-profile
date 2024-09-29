@@ -149,7 +149,8 @@ header {
 }
 
 .marquee {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
@@ -309,4 +310,139 @@ h2 {
     font-size: 14px;
     font-weight: 300;
     margin: 0;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px;
+    border-color: #ecebea;
+    border-style: solid;
+    background-color: #ffffff;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    height: 666px;
+    left: 0%;
+    position: absolute;
+    top: 1676px;
+    width: 100%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 658px;;
+}
+
+h3 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
+}
+
+.contactBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.emailMe {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: 60px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    background-color: #f1f0ef;
+    border-color: rgb(236, 235, 234);
+    border-radius: 60px;
+    opacity: 1;
+    width: 128px;
+}
+
+.telegramMe {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: 60px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    background-color: #f1f0ef;
+    border-color: rgb(236, 235, 234);
+    border-radius: 60px;
+    opacity: 1;
+    width: 128px;
+}
+
+.emailMeLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    height: 100%;
+}
+
+.telegramMeLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #242424;
+    font-weight: 500;
+    font-size: 13px;
+    height: 100%;
+}
+
+.emailMeLinkBackground {
+    background-color: #242424;
+    border-radius: 90px;
+    width: 120px;
+    height: 52px;
+    text-align: center;
+    align-content: center;
+}
+
+.telegramMeLinkBackground {
+    background-color: #ffffff;
+    border-radius: 90px;
+    width: 120px;
+    height: 52px;
+    text-align: center;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footerLine {
+    background-color: #ecebea;
+    height: 1px;
+    top: 2250px;
+    width: 1302px;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
