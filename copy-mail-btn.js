@@ -13,6 +13,12 @@ document.getElementById('copy-button').addEventListener('click', function() {
 
     document.body.removeChild(tempTextArea);
 
-    // повідомлення про успішне копіювання
-    alert('Текст скопійовано: ' + textToCopy);
+    // Зміна тексту кнопки
+    var button = document.getElementById('copy-button');
+    button.textContent = 'Copied!';
+
+    // Повернення тексту кнопки через 2 секунди
+    setTimeout(function() {
+        button.textContent = 'Copy';
+    }, 2000);
 });
