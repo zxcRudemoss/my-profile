@@ -68,8 +68,8 @@ header {
     border-radius: 60px;
     border-width: 0px;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     color: #242424;
     font-family: "Roboto", sans-serif;
 }
@@ -106,8 +106,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     color: #242424;
     text-decoration: none;
     width: 100%;
@@ -343,7 +343,7 @@ h3 {
     font-weight: 700;
     margin: 0;
     text-align: center;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
 }
@@ -433,16 +433,42 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    top: 2221px;
     width: 100%;
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
 .footerLine {
     background-color: #ecebea;
     height: 1px;
-    top: 2250px;
     width: 1302px;
-    position: absolute;
+    position: relative;
     align-items: center;
     align-content: center;
     display: flex;
+}
+
+.copyRights {
+    margin: 0;
+}
+
+.footerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1302px;
+}
+
+.footerRightItems {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    gap: 10px;
+}
+
+.MyPhoto {
+    height: 120px;
+    width: 120px;
 }
